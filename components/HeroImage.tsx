@@ -6,6 +6,11 @@ import { gsap } from "@/lib/gsap";
 import { registerGsapPlugins } from "@/lib/gsap";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { usePrefersReducedMotion } from "@/lib/usePrefersReducedMotion";
+useIsomorphicLayoutEffect(() => {
+  ensureGsap();
+  if (prefersReducedMotion) return;
+  ...
+}, [prefersReducedMotion]);
 
 type HeroImageProps = {
   title: string;
