@@ -60,6 +60,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
         <h3 className="text-lg font-light text-ink">Accès pro</h3>
         <p className="mt-2 text-sm text-ink/60">
           Utilisez n&apos;importe quel email/mot de passe pour accéder à la démo.
+          Utilisez n'importe quel email/mot de passe pour accéder à la démo.
         </p>
       </div>
       <label className="flex flex-col gap-2 text-xs uppercase tracking-[0.2em] text-ink/60">
