@@ -5,6 +5,11 @@ import { useRef } from "react";
 import { gsap } from "@/lib/gsap";
 import { useIsomorphicLayoutEffect } from "@/lib/useIsomorphicLayoutEffect";
 import { usePrefersReducedMotion } from "@/lib/usePrefersReducedMotion";
+useIsomorphicLayoutEffect(() => {
+  ensureGsap();
+  if (prefersReducedMotion) return;
+  ...
+}, [prefersReducedMotion]);
 
 type FullscreenSectionProps = {
   title: string;
