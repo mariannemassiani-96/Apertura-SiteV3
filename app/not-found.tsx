@@ -8,8 +8,7 @@ export default function NotFound() {
         <p className="max-w-md text-sm text-ink/70">
           {"Cette page n'existe pas ou a été déplacée. Revenez à l'accueil pour poursuivre votre visite."}
           Cette page n&apos;existe pas ou a été déplacée. Revenez à l&apos;accueil pour poursuivre votre
-          visite.
-          Cette page n'existe pas ou a été déplacée. Revenez à l'accueil pour poursuivre votre visite.
+          visite.      
         </p>
         <Link
           href="/"
