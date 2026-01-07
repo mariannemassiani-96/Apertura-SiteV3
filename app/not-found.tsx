@@ -6,6 +6,7 @@ export default function NotFound() {
       <div className="flex flex-col items-center gap-6 text-center">
         <h1 className="text-4xl font-light text-ink">Page introuvable</h1>
         <p className="max-w-md text-sm text-ink/70">
+          {"Cette page n'existe pas ou a été déplacée. Revenez à l'accueil pour poursuivre votre visite."}
           Cette page n&apos;existe pas ou a été déplacée. Revenez à l&apos;accueil pour poursuivre votre
           visite.
           Cette page n'existe pas ou a été déplacée. Revenez à l'accueil pour poursuivre votre visite.

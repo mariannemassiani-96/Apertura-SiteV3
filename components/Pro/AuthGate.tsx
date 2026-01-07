@@ -59,6 +59,7 @@ export default function AuthGate({ children }: { children: React.ReactNode }) {
       <div>
         <h3 className="text-lg font-light text-ink">Accès pro</h3>
         <p className="mt-2 text-sm text-ink/60">
+          {"Utilisez n'importe quel email/mot de passe pour accéder à la démo."}
           Utilisez n&apos;importe quel email/mot de passe pour accéder à la démo.
           Utilisez n'importe quel email/mot de passe pour accéder à la démo.
         </p>
