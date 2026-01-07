@@ -7,12 +7,13 @@ export const createLenis = () => {
   const lenis = new Lenis({
     duration: 1.1,
     smoothWheel: true,
-    smoothTouch: false,
-    lerp: 0.08
+    lerp: 0.08,
+    // smoothTouch: false, // ❌ pas supporté par ta version de lenis (erreur TS)
   });
 
+  // GSAP ticker fournit du temps en secondes -> Lenis attend des millisecondes
   const raf = (time: number) => {
-    lenis.raf(time);
+    lenis.raf(time * 1000);
   };
 
   gsap.ticker.add(raf);
@@ -23,6 +24,6 @@ export const createLenis = () => {
     destroy: () => {
       gsap.ticker.remove(raf);
       lenis.destroy();
-    }
+    },
   };
 };
